@@ -21,11 +21,12 @@ export default function Main() {
                 "Canada",
                 "Australia",
                 "UK",
+                "New Zealand",
                 "Germany",
                 "Singapore",
               ]}
-              typeSpeed={120}
-              backSpeed={140}
+              typeSpeed={100}
+              backSpeed={120}
               loop
             />
           </p>
