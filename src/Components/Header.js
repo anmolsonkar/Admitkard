@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -15,11 +16,21 @@ const Header = () => {
           <img src="logo.svg" className="lg:w-40 w-32" alt="Logo" />
         </h1>
         <ul className="hidden md:flex">
-          <li className="p-4">Home</li>
-          <li className="p-4">Process</li>
-          <li className="p-4 ">Top Admissions</li>
-          <li className="p-4">About</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/Process">Process</Link>
+          </li>
+          <li className="p-4 ">
+            <Link to="/Topadmissions">Top Admissions</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/About">About</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/Contact">Contact</Link>
+          </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -35,11 +46,11 @@ const Header = () => {
           <h1 className=" text-3xl font-bold m-4">
             <img src="logo.svg" className="w-36" alt="Logo" />
           </h1>
-          <li className="p-4 border-b border-gray-300">Home</li>
-          <li className="p-4 border-b border-gray-300">Process</li>
-          <li className="p-4 border-b border-gray-300">Top Admissions</li>
-          <li className="p-4 border-b border-gray-300">About</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4 border-b border-gray-300"> <Link to="/">Home</Link></li>
+          <li className="p-4 border-b border-gray-300"> <Link to="/Process">Process</Link></li>
+          <li className="p-4 border-b border-gray-300"> <Link to="/Topadmissions">Top Admissions</Link></li>
+          <li className="p-4 border-b border-gray-300">  <Link to="/About">About</Link></li>
+          <li className="p-4">  <Link to="/Contact">Contact</Link></li>
         </ul>
       </div>
     </div>

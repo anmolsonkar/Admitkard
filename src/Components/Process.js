@@ -1,11 +1,6 @@
-import React from 'react'
-
-export default function Process() {
-
-    
-  return (
-    <div>
-      <h1>dasdasda</h1>
-    </div>
-  )
+import React from "react";
+function Process() {
+  return <h1>Process</h1>;
 }
+
+export default Process;
