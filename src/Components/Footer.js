@@ -36,10 +36,9 @@ export default function Footer() {
         <div className="flex justify-around">
           <div>
             <iframe
+              title="Admitkard"
               className="w-[350px] h-[250px]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14007.657991823986!2d77.36705923198721!3d28.63232456868415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce42ae4ed73e7%3A0xa7c94e8f463b993!2sAdmitKard!5e0!3m2!1sen!2sin!4v1659558398558!5m2!1sen!2sin"
-              width="600"
-              height="450"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -73,7 +72,7 @@ export default function Footer() {
           <p class="text-center">
             Designed & Developed By
             <a
-              class="hover:underline"
+              class="hover:underline pl-1"
               target="blank"
               href="https://www.linkedin.com/in/anmol-sonkar"
             >
