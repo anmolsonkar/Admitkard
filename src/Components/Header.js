@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <div className="shadow-lg">
+    <div className="fixed bg-white w-full z-20  top-0 left-0 shadow-lg">
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-[#666666]">
         <h1 className="text-3xl font-bold">
           <img src="logo.svg" className="lg:w-40 w-32" alt="Logo" />

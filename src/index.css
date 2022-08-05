@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 body {
-  background-color: #fafafa;
+  background-color: #f3f2ef;
   font-family: "Nunito", sans-serif;
+}
+.active {
+  color: red;
 }
