@@ -13,7 +13,7 @@ export default function Footer() {
     <div className="shadow-lg mx-auto w-full text-black">
       <div className=" bg-white shadow-lg lg:p-4 p-3">
         <div className="lg:flex lg:justify-between  content-center grid lg:grid-cols-4 md:grid-cols-2 ">
-          <div className="flex  justify-center">
+          <div className="flex  justify-center my-auto">
             <h1 className="flex pr-2 text-xl">
               <FaGlobeAsia />
             </h1>
@@ -21,12 +21,12 @@ export default function Footer() {
               Get connected with us on social networks!
             </h1>
           </div>
-          <div className="flex justify-center py-3">
-            <h className="px-3 text-xl">
+          <div className="flex justify-center py-3 my-auto">
+            <h1 className="px-3 text-xl">
               <a href="https://www.facebook.com/AdmitKard/" target="blank">
                 <FaFacebookF />
               </a>
-            </h>
+            </h1>
             <a href="https://twitter.com/admitkard/" target="blank">
               <h1 className="px-3 text-xl">
                 <FaTwitter />
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
         <div className="grid content-around lg:grid-cols-6 w-full md:grid-cols-2">
           <div>
-            <h1 className="font-bold py-1 pt-3 text-center ">
+            <h1 className="font-bold py-1 pt-3 md:pt-1 lg:pt-1 text-center">
               AdmitKard Platform
             </h1>
             <ul>
