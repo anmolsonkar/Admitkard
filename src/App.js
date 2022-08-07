@@ -3,11 +3,10 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Process from "./Components/Process";
-import Contact from "./Components/Contact";
-import Topadmissions from "./Components/Topadmissions";
+import Manage from "./Components/Manage";
+import Community from "./Components/Community";
 import About from "./Components/About";
-import Home from "./Components/Home.js";
+import Home from "./Components/Home";
 
 function App() {
   return (
@@ -18,10 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/Process" element={<Process />} />
-          <Route path="/Topadmissions" element={<Topadmissions />} />
+          <Route path="/Manage" element={<Manage />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Community" element={<Community />} />
         </Routes>
       </Router>
       <Footer></Footer>

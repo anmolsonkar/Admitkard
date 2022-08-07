@@ -22,21 +22,35 @@ export default function Footer() {
             </h1>
           </div>
           <div className="flex justify-center py-3">
-            <h1 className="px-3 text-xl">
-              <FaFacebookF />
-            </h1>
-            <h1 className="px-3 text-xl">
-              <FaTwitter />
-            </h1>
-            <h1 className="px-3 text-xl">
-              <FaInstagram />
-            </h1>
-            <h1 className="px-3 text-2xl">
-              <FaYoutube />
-            </h1>
-            <h1 className="px-3 text-xl">
-              <FaLinkedin />
-            </h1>
+            <h className="px-3 text-xl">
+              <a href="https://www.facebook.com/AdmitKard/" target="blank">
+                <FaFacebookF />
+              </a>
+            </h>
+            <a href="https://twitter.com/admitkard/" target="blank">
+              <h1 className="px-3 text-xl">
+                <FaTwitter />
+              </h1>
+            </a>
+            <a href="https://www.instagram.com/admitkard/?hl=en" target="blank">
+              <h1 className="px-3 text-xl">
+                <FaInstagram />
+              </h1>
+            </a>
+
+            <a href="https://www.youtube.com/c/Admitkard" target="blank">
+              <h1 className="px-3 -mt-1 text-2xl">
+                <FaYoutube />
+              </h1>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/admitkard/"
+              target="blank"
+            >
+              <h1 className="px-3 text-xl">
+                <FaLinkedin />
+              </h1>
+            </a>
           </div>
         </div>
       </div>
