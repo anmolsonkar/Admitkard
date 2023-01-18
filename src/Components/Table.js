@@ -2,17 +2,17 @@ import React from "react";
 
 const Table = ({ data }) => {
   return (
-    <table className="table-auto rounded-lg overflow-hidden bg-white mt-10">
-      <thead>
-        <tr className="bg-white">
+    <table className="table-auto rounded-lg overflow-hidden shadow bg-white mt-10">
+      <thead className="">
+        <tr className="bg-white border">
           <th className="px-4 py-2">Country</th>
           <th className="px-4 py-2">Institution Name</th>
-          <th className="px-4 py-2">Master Agent</th>
+          <th className="px-4 py-2">Master Agents</th>
         </tr>
       </thead>
       <tbody>
         {data.map((item) => (
-          <tr key={item.id} className="hover:bg-gray-100">
+          <tr key={item.id}>
             <td className="border px-4 py-2">
               <div className="flex items-center">
                 <img
@@ -40,7 +40,7 @@ const Table = ({ data }) => {
                       : "default.png"
                   }`}
                   alt={item.country}
-                  className="w-8 h-8 rounded-full mr-4"
+                  className="w-8 h-8 mr-4"
                 />
                 <span className="text-gray-800">{item.country}</span>
               </div>
