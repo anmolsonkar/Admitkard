@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect} from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -12,10 +12,23 @@ function classNames(...classes) {
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+  const navRef = useRef(null);
 
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setNav(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [nav]);
 
   return (
     <div className="fixed bg-white w-full z-20  top-0 left-0 shadow-lg">
@@ -83,7 +96,7 @@ const Header = () => {
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
 
-        <ul
+        <ul  ref={navRef}
           className={
             nav
               ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-300 shadow-md bg-white ease-in-out duration-500"
