@@ -86,7 +86,7 @@ const Header = () => {
           </li>
 
           <li className="p-4">
-            <Link to="/Community">Community forum</Link>
+            <Link to="/Tools">Tools</Link>
           </li>
           <li className="p-4">
             <Link to="/About">About</Link>
@@ -157,7 +157,7 @@ const Header = () => {
           </li>
 
           <li className="p-4 border-b border-gray-300">
-            <Link to="/Community">Community forum</Link>
+            <Link to="/Tools">Tools</Link>
           </li>
           <li className="p-4">
             <Link to="/About">About</Link>

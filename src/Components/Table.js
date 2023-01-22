@@ -2,7 +2,7 @@ import React from "react";
 
 const Table = ({ data }) => {
   return (
-    <table className="table-auto rounded-lg overflow-hidden shadow bg-white mt-10">
+    <table className="table-auto rounded-lg overflow-hidden shadow bg-white mt-10 text-[11.5px] lg:text-[15px]">
       <thead className="">
         <tr className="bg-white border">
           <th className="px-4 py-2">Country</th>
@@ -14,7 +14,7 @@ const Table = ({ data }) => {
         {data.map((item) => (
           <tr key={item.id}>
             <td className="border px-4 py-2">
-              <div className="flex items-center">
+              <div className="flex items-center pr-6">
                 <img
                   src={`/flags/${
                     item.country === "United States"

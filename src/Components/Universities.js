@@ -87,7 +87,7 @@ export const University = [
     id: 15,
     country: "United States",
     university_name: "Otis College of Art and Design(OTIS)",
-    master_agents: "Abhishek",
+    master_agents: "Meenu Dada",
   },
   {
     id: 16,
